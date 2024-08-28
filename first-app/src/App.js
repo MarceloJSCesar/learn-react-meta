@@ -1,32 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import AuthForms from './components/AuthForms';
 
-let userModel = {
-  message: "Good Morning!",
-  user: {
-    firstname: "Marcelo",
-    lastname: "Cesar",
-  }
-};
+// let userModel = {
+//   message: "Good Morning!",
+//   user: {
+//     firstname: "Marcelo",
+//     lastname: "Cesar",
+//   }
+// };
 
 function App() {
   return (
     <div className="App">
-      <Header userModel={userModel}/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Simple Authentication using Hooks</h1>
+        <AuthForms />
       </header>
     </div>
   );
